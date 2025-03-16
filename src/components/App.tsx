@@ -1,21 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../page/Home";
-import "./App.css";
-import { Suspense } from "react";
-import Loader from "./Loader/Loader";
+import Home from "../page/Home/Home";
+import NotFoundPage from "../page/NotFoundPage/NotFoundPage";
+import Layout from "./Layout";
 
 function App() {
   return (
-    <>
-      <Suspense fallback={<Loader />}>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-          </Route>
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Suspense>
-    </>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </Layout>
   );
 }
 

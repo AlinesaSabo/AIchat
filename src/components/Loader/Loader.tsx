@@ -1,11 +1,10 @@
-import s from "./Loader.module.css";
+import { InfinitySpin } from "react-loader-spinner";
+import css from "./Loader.module.css";
 
-const Loader = () => {
+export default function Loader() {
   return (
-    <div className={s.overlay}>
-      <span className={s.loader}></span>
+    <div className={css.loader}>
+      <InfinitySpin width="200" color="red" />
     </div>
   );
-};
-
-export default Loader;
+}
