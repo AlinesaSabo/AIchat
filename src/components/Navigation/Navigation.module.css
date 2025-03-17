@@ -192,6 +192,7 @@
 
 @media (max-width: 1024px) {
   .header {
+    border-bottom: 1px solid var(--border);
     padding: 10px 16px;
   }
 

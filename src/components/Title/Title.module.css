@@ -1,0 +1,120 @@
+.titleContainer {
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--black);
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: var(--gray);
+  margin-bottom: 16px;
+}
+
+.feature {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+}
+.diamond {
+  width: 13px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.useFor {
+  margin-top: 35px;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.buttonList {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.buttonList li {
+  display: inline-block;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.svg {
+  width: 18px;
+  height: 18px;
+}
+
+.whatsappButton {
+  background: linear-gradient(90deg, rgba(52, 199, 89, 0.8) 0%, #34c759 100%);
+}
+
+.whatsappButton:hover {
+  background: #1ebe57;
+}
+
+.telegramButton {
+  background: linear-gradient(90deg, rgba(4, 150, 221, 0.8) 0%, #0496dd 100%);
+}
+
+.telegramButton:hover {
+  background: #0077b5;
+}
+
+.websiteButton {
+  background: linear-gradient(90deg, rgba(142, 142, 147, 0.8) 0%, #8e8e93 100%);
+}
+
+.websiteButton:hover {
+  background: #e67e22;
+}
+
+@media (max-width: 1024px) {
+  .titleContainer {
+    padding: 24px 16px;
+  }
+  .titleContainer {
+    align-items: center;
+    text-align: center;
+  }
+  .feature {
+    display: none;
+  }
+  .buttonList {
+    justify-content: center;
+  }
+
+  .useFor {
+    margin-top: 16px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+}

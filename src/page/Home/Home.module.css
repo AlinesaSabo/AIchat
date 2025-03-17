@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 130px;
+  margin-top: 97px;
+}
+
+.titleSection {
+  flex: 0 0 55%;
+}
+
+.formSection {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .container {
+    padding: 0 16px;
+    margin-top: 24px;
+  }
+}
