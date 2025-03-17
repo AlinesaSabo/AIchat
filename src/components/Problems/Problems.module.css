@@ -1,0 +1,80 @@
+/* Контейнер */
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 130px;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14286;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.problemsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.problemRow {
+  display: flex;
+  gap: 24px;
+  white-space: nowrap;
+  min-width: 100%;
+}
+
+.scrollRight {
+  animation: scrollRight 30s linear infinite;
+}
+
+.scrollLeft {
+  animation: scrollLeft 30s linear infinite;
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Анимация влево */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.problemItem {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(142, 142, 147, 0.3) 0%,
+    rgba(142, 142, 147, 0.1) 100%
+  );
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .problemRow {
+    justify-content: center;
+  }
+}

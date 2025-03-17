@@ -1,6 +1,7 @@
 .backgroundContainer {
   position: absolute;
-  right: 0;
+  right: -30%;
+  top: -18%;
   width: 626px;
   height: 546px;
   background: url("/src/assets/BG-form.png");
@@ -39,6 +40,7 @@
 .formWrapper {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .title {
