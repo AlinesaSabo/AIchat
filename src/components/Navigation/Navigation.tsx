@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import s from "./Navigation.module.css";
 import Button from "../Button/Button";
+import Logo from "../../assets/ai-chat.svg";
+import arrow from "../../assets/arrow-down.svg";
+import login from "../../assets/login.svg";
+import burger from "../../assets/burger.svg";
 
 const Navigation: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -37,11 +41,7 @@ const Navigation: React.FC = () => {
       <div className={s.container}>
         <Link to="/">
           <div className={s.logoContainer}>
-            <img
-              src="/src/assets/ai-chat.svg"
-              alt="AI Chat Logo"
-              className={s.logo}
-            />
+            <img src={Logo} alt="AI Chat Logo" className={s.logo} />
             <span>Chat</span>
           </div>
         </Link>
@@ -55,7 +55,7 @@ const Navigation: React.FC = () => {
               <div className={s.navItem} onClick={toggleDropdown}>
                 Продукты
                 <img
-                  src="/src/assets/arrow-down.svg"
+                  src={arrow}
                   alt="arrow"
                   className={`${s.arrow} ${isDropdownOpen ? s.arrowUp : ""}`}
                 />
@@ -90,11 +90,7 @@ const Navigation: React.FC = () => {
 
         <div className={s.authButtons}>
           <Link to="/login" className={s.login}>
-            <img
-              src="/src/assets/login.svg"
-              alt="login"
-              className={s.loginLogo}
-            />
+            <img src={login} alt="login" className={s.loginLogo} />
             Войти
           </Link>
           <Button
@@ -112,7 +108,7 @@ const Navigation: React.FC = () => {
             toggleMenu();
           }}
         >
-          <img src="/src/assets/burger.svg" alt="Меню" />
+          <img src={burger} alt="Меню" />
         </div>
       </div>
     </header>

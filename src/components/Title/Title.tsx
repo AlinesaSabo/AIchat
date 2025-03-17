@@ -2,6 +2,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import s from "./Title.module.css";
 import { RiTelegram2Fill } from "react-icons/ri";
 import { FaGlobe } from "react-icons/fa";
+import diamond from "../../assets/diamond.svg";
 
 const Title = () => {
   return (
@@ -15,27 +16,15 @@ const Title = () => {
         входящие заявки и доводит их до покупки без участия менеджеров в чате
       </h4>
       <p className={s.feature}>
-        <img
-          src="/src/assets/diamond.svg"
-          alt="diamond"
-          className={s.diamond}
-        />
+        <img src={diamond} alt="diamond" className={s.diamond} />
         Сокращение расходов на зарплаты менеджеров до 80%
       </p>
       <p className={s.feature}>
-        <img
-          src="/src/assets/diamond.svg"
-          alt="diamond"
-          className={s.diamond}
-        />
+        <img src={diamond} alt="diamond" className={s.diamond} />
         Исключены человеческие ошибки, неточности и раздражение
       </p>
       <p className={s.feature}>
-        <img
-          src="/src/assets/diamond.svg"
-          alt="diamond"
-          className={s.diamond}
-        />
+        <img src={diamond} alt="diamond" className={s.diamond} />
         Увеличение конверсии в продажи или брони на 30%
       </p>
       <h5 className={s.useFor}>Используйте для:</h5>
