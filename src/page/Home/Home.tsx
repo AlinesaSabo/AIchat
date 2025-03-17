@@ -5,7 +5,7 @@ import s from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <div className={s.container}>
         <div className={s.titleSection}>
           <Title />
@@ -17,7 +17,7 @@ const Home = () => {
       <div>
         <Problems />
       </div>
-    </div>
+    </>
   );
 };
 
