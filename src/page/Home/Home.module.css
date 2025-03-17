@@ -1,11 +1,15 @@
+.home {
+  width: 100%;
+  padding: 0 130px;
+}
+
 .container {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 130px;
   margin-top: 97px;
 }
 
@@ -17,6 +21,18 @@
   flex: 0 0 45%;
   display: flex;
   justify-content: flex-end;
+}
+
+.sectionProblems {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+  .home {
+    padding: 0 50px;
+  }
 }
 
 @media (max-width: 1024px) {
